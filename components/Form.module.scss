@@ -1,0 +1,14 @@
+.formButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding-bottom: 2rem;
+}
+
+.form {
+  min-height: 70vh;
+}
+
+.link {
+  text-decoration: none;
+}

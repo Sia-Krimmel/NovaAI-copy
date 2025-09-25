@@ -1,0 +1,24 @@
+.tableHeader {
+  padding-bottom: 16px;
+}
+
+.table2Cols {
+  display: flex;
+}
+
+.container {
+  border: 1px solid var(--theme-color-border);
+  padding: 24px;
+}
+
+.tableContainer {
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cardItemOptions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}

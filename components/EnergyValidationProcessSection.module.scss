@@ -1,0 +1,196 @@
+.container {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 4fr; /* Two columns: 1st column takes at least 200px and remaining space goes to the 2nd column */
+  background-color: var(--theme-modal);
+  height: 100vh;
+}
+
+.brandName {
+  font-family: 'SpaceGroteskMedium', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-modal);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.title {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  display: block;
+  margin-top: 30px;
+}
+
+.sidenav {
+  height: 100vh;
+  min-height: 100vh;
+  background-color: var(--theme-modal);
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-bottom: 1px solid var(--theme-color-border);
+  padding: 30px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  margin-top: 20px;
+}
+
+.sidenav a:hover {
+  color: var(--theme-color-accent);
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  background-color: var(--theme-modal);
+  color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid var(--color-border-grey100);
+  justify-content: space-between;
+}
+.navbar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--theme-label-dark-text);
+  display: block;
+}
+
+.navbarOne {
+  display: flex;
+  align-self: flex-end;
+}
+.navbarTwo a {
+  font-size: 14px;
+}
+
+.main {
+  padding: 20px 10px;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.ctaButton {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1200px;
+}
+
+.reportingSection {
+  font-size: 30px;
+}
+.reportingDesc {
+  color: var(--theme-label-dark-text);
+  font-size: 16px;
+}
+
+.bigGreyBox {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+
+  @media (max-width: 1250px) {
+    gap: 0px;
+  }
+}
+
+.resultsWrapper {
+  padding: 40px 40px 40px 40px;
+}
+
+.columns2 {
+  grid-column: 1/4;
+}
+
+.columns3 {
+  grid-column: 4/6;
+}
+
+.grayBackground {
+  border-radius: 4px;
+  background: var(--theme-color-input-dark);
+}
+
+.heading {
+  font-size: 16px;
+  color: var(--color-text);
+  padding-bottom: 32px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 32px;
+}
+
+.resultsDescriptions {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 35px;
+}
+
+.resultsRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.resultsTitle {
+  font-size: 20.5px;
+  font-family: 'SpaceGroteskMedium', sans-serif;
+  margin-bottom: 4px;
+}
+
+.resultsText {
+  font-size: 12px;
+  font-family: 'SpaceGroteskMedium', sans-serif;
+}
+
+.resultsSteps {
+  font-size: 20.5px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.button {
+  align-self: flex-end;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+
+.resultsStatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .statusGreen {
+    color: var(--theme-color-accent);
+  }
+
+  .statusGray {
+    color: var(--theme-label-dark-text);
+  }
+}
+
+.documentInfo {
+  padding-bottom: 0.5rem;
+}

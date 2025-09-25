@@ -1,0 +1,49 @@
+.root {
+  position: relative;
+}
+
+.input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  display: block;
+  opacity: 0;
+}
+
+.body {
+  -webkit-appearance: none;
+  font-size: var(--type-scale-7);
+  transition: 200ms ease box-shadow;
+  border-radius: 4px;
+  background: var(--color-background);
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--theme-color-border);
+  height: 100px;
+}
+
+.hover {
+  box-shadow: 0 0 0 1px var(--theme-color-border), 0 0 0 2px var(--color-accent);
+}
+
+.attachment {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  color: var(--theme-color-form-text);
+  flex-direction: column;
+}
+
+.emptyFile {
+  border: 1px solid var(--theme-color-border);
+  border-radius: var(--border-radius-tiny);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 20px;
+  height: 100px;
+}

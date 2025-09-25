@@ -1,0 +1,140 @@
+.submitSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questionSection {
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 90%;
+
+  .question {
+    display: flex;
+    gap: 10px;
+    color: #5b5d65;
+    text-decoration: underline;
+  }
+
+  .hiddenRadio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  row-gap: var(--type-scale-8);
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.datePickerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  .format {
+    color: #5b5d65;
+    font-size: 13px;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.waterUsage {
+  margin-top: 8px;
+}
+
+.upload {
+  margin-top: 24px;
+
+  .uploadText {
+    display: flex;
+    text-decoration: underline;
+    font-size: 13px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+  }
+}
+
+.formFooter {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.instructionsText {
+  font-size: 16px;
+  max-width: 90ch;
+  color: var(--color-grey);
+  padding-bottom: 0.5rem;
+}
+
+.twoColumnGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.twoColumnGridTiny {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.threeColumnGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 1050px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.threeColumnGridTiny {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.fourColumnGridTiny {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

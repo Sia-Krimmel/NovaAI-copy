@@ -1,0 +1,264 @@
+.container {
+  min-height: 700px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    min-height: 200px;
+  }
+}
+
+.rotatedSquare {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 500px;
+  height: 500px;
+  transform: rotateX(50deg) rotateZ(45deg);
+  transform-origin: bottom center;
+  gap: 3rem;
+
+  margin: 0 auto;
+  max-width: 70vw;
+  position: absolute;
+  top: 0;
+  right: 44%;
+
+  @media (max-width: 1500px) {
+    right: 46%;
+  }
+
+  @media (max-width: 1050px) {
+    width: 300px;
+    height: 300px;
+    gap: 1.4rem;
+    top: 12rem;
+  }
+
+  @media (max-width: 768px) {
+    top: 4rem;
+    right: 41vw;
+  }
+
+  @media (max-width: 590px) {
+    top: 8rem;
+    right: 38vw;
+    width: 240px;
+    height: 240px;
+  }
+
+  @media (max-width: 380px) {
+    right: 8vw;
+    top: 11rem;
+    gap: 2rem;
+    width: 250px;
+    height: 250px;
+    transform: rotateX(0deg) rotateZ(0deg);
+  }
+}
+
+.diagonalButton {
+  width: 161px;
+  height: 165px;
+  padding-left: 10px;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 14px;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  border-radius: var(--border-radius-medium);
+  border: 1px solid var(--color-accent);
+  outline-offset: 4px;
+  box-shadow: 0px;
+
+  @media (max-width: 1050px) {
+    width: 110px;
+    height: 110px;
+  }
+
+  @media (max-width: 590px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.diagonalButton:hover {
+  transition: 200ms ease box-shadow;
+  box-shadow: 0px 0px 8px #34c75968;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  height: 160px;
+  border-radius: var(--border-radius-medium);
+  font-size: 1.25rem;
+  background-color: #001004;
+  color: #001004;
+  box-shadow: 0px 0px 32px #34c75927;
+  border-top: 1px solid var(--color-accent);
+  border-left: 1px solid var(--color-accent);
+  border-right: 1px solid var(--color-accent);
+  transform: translateY(-6px);
+
+  @media (max-width: 1050px) {
+    min-width: 110px;
+    height: 100px;
+  }
+
+  @media (max-width: 590px) {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+  }
+
+  @media (max-width: 380px) {
+    width: 40px;
+    height: 70px;
+    min-width: 70px;
+  }
+}
+
+.active {
+  transition: 200ms ease background-color;
+
+  transform: translateY(-2px);
+  background-color: #002309;
+  color: #002309;
+  box-shadow: 0px 0px 8px var(--color-accent);
+}
+
+.buttonWithText {
+  position: relative;
+  left: 0;
+}
+
+.text {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+  min-width: 200px;
+  transform: rotateX(0deg) rotateZ(315deg);
+}
+
+.textDiagonalRight {
+  top: -8rem;
+  left: 3rem;
+  bottom: 4rem;
+
+  @media (max-width: 1050px) {
+    top: -8rem;
+    left: -1rem;
+    bottom: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.textDiagonalLeft {
+  top: 5rem;
+  right: 8rem;
+
+  @media (max-width: 1050px) {
+    top: 3rem;
+    right: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.textDiagonalBottom {
+  bottom: -5rem;
+  right: 2rem;
+  padding-left: -2rem;
+
+  @media (max-width: 1050px) {
+    bottom: -5rem;
+    right: -1rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.textDiagonalOuterBottom {
+  bottom: -2rem;
+  left: 5.2rem;
+
+  @media (max-width: 1050px) {
+    bottom: -4rem;
+    left: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.textDiagonalBottomRight {
+  top: -1rem;
+  left: 8rem;
+
+  @media (max-width: 1050px) {
+    bottom: -4rem;
+    left: 7.5rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.textTop {
+  top: -4rem;
+  right: 3rem;
+  bottom: 4rem;
+
+  @media (max-width: 1050px) {
+    top: -4rem;
+    right: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.textActive {
+  transition: 200ms ease color;
+  color: var(--color-accent);
+}
+
+.icon {
+  max-height: 85px;
+
+  @media (max-width: 1050px) {
+    max-height: 55px;
+  }
+
+  @media (max-width: 768px) {
+    max-height: 35px;
+  }
+
+  @media (max-width: 590px) {
+    max-height: 40px;
+    max-width: 55px;
+  }
+
+  @media (max-width: 390px) {
+    min-width: 50px;
+    height: 50px;
+    transform-origin: center;
+    transform: rotateX(9deg) rotateZ(88deg);
+  }
+}

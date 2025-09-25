@@ -1,0 +1,24 @@
+.successScreen {
+  // padding-top: 3rem;
+  // padding-bottom: 3rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // padding: 1rem;
+  min-height: 60vh;
+}
+
+.message {
+  color: var(--color-grey200);
+  max-width: 50ch;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.icon {
+  max-width: 200px;
+}

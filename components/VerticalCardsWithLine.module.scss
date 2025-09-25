@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    position: relative;
+
+    @media (max-width:768px) {
+      padding-left: 0.3rem;
+    }
+}
+  
+.boxItems {
+  list-style: none; 
+  padding-left: 0; 
+}
+
+
+.box{
+  position:relative;
+  border: 0.7px solid var(--color-lime-green);
+  width: 100%;
+  min-height: 250px;
+  border-radius: var(--border-radius-small);
+  padding: 20px;
+  margin-left: 1rem;
+
+  @media (max-width:768px) {
+      width: 100%;
+      min-height:200px;
+      height: auto;
+  }
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: -10px;
+  position: absolute;
+  background: radial-gradient(42.14% 40.63% at 50% 50%, var(--color-black) 0%, var(--color-black) 58.33%, var(--color-lime-green) 58.34%);
+}
+
+.circle.even {
+  background: radial-gradient(42.14% 40.63% at 50% 50%, var(--color-black) 0%, var(--color-black) 58.33%, var(--color-white)  58.34%);
+}
+
+.boxItem {
+  display: flex; 
+  align-items: center; 
+  border-left: 3px solid var(--color-lime-green);
+
+}
+
+.boxItem:first-child {
+  border-top: 3px solid transparent;
+  border-top: 3px solid linear-gradient(to bottom, transparent, var(--color-lime-green));
+}
+
+.boxItem:last-child {
+  background:none;
+  // border-bottom: 3px solid transparent;
+  // border-color:  linear-gradient(180deg, #9DFF29 0%, rgba(157, 255, 41, 0.36) 16.75%, rgba(157, 255, 41, 0.00) 36.96%);
+}
+
+.subVerticalBoxTitle{
+    font-family: 'SpaceGroteskMedium', sans-serif;
+    display: flex;
+    flex-direction: row;
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+    gap: 0.25rem;
+
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
+}
+
+.subVerticalBoxNumber {
+    font-family: 'SpaceGroteskMedium', sans-serif;
+    color: var(--color-lime-green);
+}
+
+.subVerticalBoxText {
+   font-family: 'SpaceGroteskLight', sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   color: #8C8C8C;
+   line-height: var(--line-height-small);
+
+   @media (max-width:768px) {
+    line-height: var(--line-height-regular);
+  }
+}
+
+
+.iconThree {
+  font-family: 'SpaceGroteskMedium', sans-serif;
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  @media (max-width:1280px){
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.hideBottomBorder {
+    width: 12px;
+    background: var(--color-black);
+    margin-left: -1px;
+}
+
+.hideTopBorder {
+  width: 12px;
+  background: var(--color-black);
+  position:absolute;
+  margin-left: -1px;
+}
+ 

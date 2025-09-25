@@ -1,0 +1,552 @@
+@font-face {
+  font-family: "SpaceGroteskBold";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/SpaceGrotesk-Bold.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SpaceGroteskMedium";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/SpaceGrotesk-Medium.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SpaceGroteskLight";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/SpaceGrotesk-Light.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SpaceGroteskRegular";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/SpaceGrotesk-Regular.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SpaceGroteskSemiBold";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/SpaceGrotesk-SemiBold.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirBlack";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-Black.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirBlackOblique";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-BlackOblique.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirBook";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-Book.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirBookOblique";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-BookOblique.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirHeavy";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-Heavy.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirHeavyOblique";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-HeavyOblique.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirLight";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-Light.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirLightOblique";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-LightOblique.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-Medium.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirMediumOblique";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-MediumOblique.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirOblique";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-Oblique.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "AvenirRoman";
+  src: url("https://intdev-global.s3.us-west-2.amazonaws.com/nova/Avenir-Roman.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "JetBrainsMono-Medium";
+  src: url("https://www-storage-nova.s3.us-east-2.amazonaws.com/public/fonts/JetBrainsMono-Medium.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("https://www-storage-nova.s3.us-east-2.amazonaws.com/public/fonts/Inter-Regular.ttf");
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  box-sizing: border-box;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body.theme-light {
+  --color-background-2: var(--color-black-faded-2);
+  --color-background-3: var(--color-black-faded-3);
+  --color-background: var(--color-white);
+  --color-success: var(--theme-color-accent);
+  --color-text: var(--color-black);
+  --theme-border-green: var(--theme-color-accent);
+  --theme-border: 1px solid var(--color-border);
+  --theme-button-primary-color: var(--color-black);
+  --theme-button-primary-text: var(--color-white);
+  --theme-button-shadow-hover: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --theme-button-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  --theme-color-accent: var(--color-accent);
+  --theme-color-accent: var(--color-accent);
+  --theme-color-banner: var(--theme-primary-light-background);
+  --theme-color-border: var(--color-grey);
+  --theme-color-dark-green: rgb(33, 142, 82);
+  --theme-color-error: var(--color-error);
+  --theme-progress-border: var(--color-black);
+  --theme-modal: inset 0 0 0 1px var(--color-border),
+    0 0 1px 4px rgba(0, 0, 0, 0.02);
+  --theme-label: var(--color-grey200);
+  --theme-label-dark-text: var(--color-grey-text);
+  --theme-color-form-text: var(--color-grey200);
+  --theme-color-text-primary: var(--color-black);
+  --theme-primary-actions-light-background: #f1f1f1;
+  --theme-light-hover-background: var(--color-grey100);
+  --theme-color-accent-light: var(--color-accent-light);
+  --theme-primary-light-background: var(--color-white100);
+}
+
+body.theme-dark {
+  --color-background-2: var(--color-white-faded-2);
+  --color-background-3: var(--color-white-faded-3);
+  --color-background: var(--color-black);
+  --color-success: rgba(68, 198, 127, 1);
+  --color-text: var(--color-white);
+  --theme-border-green: var(--theme-color-accent);
+  --theme-button-primary-color: var(--theme-color-accent);
+  --theme-button-primary-text: var(--color-black);
+  --theme-button-shadow-hover: 0 0px 0px 4px rgba(255, 255, 255, 0.2);
+  --theme-button-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+  --theme-color-accent-light: var(--color-accent-light);
+  --theme-color-accent: var(--color-accent);
+  --theme-color-banner: #181818;
+  --theme-color-border: var(--color-grey-black);
+  --theme-color-dark-green: #7ac420;
+  --theme-color-error: var(--color-error);
+  --theme-progress-border: var(--theme-color-border);
+  --theme-modal: inset 0 0 0 1px var(--theme-color-border);
+  --theme-label-dark-text: var(--color-grey-text);
+  --theme-color-form-text: var(--color-grey200);
+  --theme-color-text-primary: var(--color-grey200);
+  --theme-primary-actions-light-background: #454545;
+  --theme-light-hover-background: var(--color-grey100);
+  --theme-primary-light-background: #777777;
+}
+
+#__next {
+}
+
+body {
+  //theme
+  --color-accent-light: #38b57030;
+  --color-accent: #34c759;
+  --color-beige: #e0e0e0;
+  --color-black-faded-2: rgba(0, 11, 0, 0.075);
+  --color-black-faded-3: rgba(0, 11, 0, 0.125);
+  --color-black-gray: #434343;
+  --color-black: #000000;
+  --color-black: #000b00;
+  --color-border-black: #4b5563;
+  --color-border-grey100: #2b2b2b;
+  --color-border: #dcdddd;
+  --color-dark-green: #18210c;
+  --color-error: rgba(218, 30, 40, 1);
+  --color-grey-black: #383838;
+  --color-grey-text: #9f9f9f;
+  --color-grey-transparent100: #cecece8c;
+  --color-grey: #dcdddd;
+  --color-grey100: #ededef;
+  --color-grey200: #5f6377;
+  --color-light-gray: lightgray;
+  --color-light-white: #f7f0ea;
+  --color-lime-green: #9dff29;
+  --color-primary: #156ff7;
+  --color-table-background: #e4e4e4;
+  --color-white-blue: #dee6ff;
+  --color-white100: #fcfcfd;
+  --color-white-faded-2: rgba(251, 250, 245, 0.075);
+  --color-white-faded-3: rgba(251, 250, 245, 0.125);
+  --color-white: #ffffff;
+  --color-grey-label: #cfd0d7;
+  --theme-button-primary-color: var(--color-black);
+  --theme-button-primary-text: var(--color-white);
+  --theme-color-accent: var(--color-accent);
+  --theme-color-border: #dcdddd;
+  --theme-color-input-dark: #71717182;
+  --theme-label-dark-text: var(--color-grey-text);
+
+  --type-scale-1: 4.25rem;
+  --type-scale-2: 2.8rem;
+  --type-scale-3: 1.5rem;
+  --type-scale-4: 1.25rem;
+  --type-scale-5: 1rem;
+  --type-scale-6: 0.875rem;
+  --type-scale-7: 0.75rem;
+  --type-scale-7-small: 14px;
+  --type-scale-8: 0.5rem;
+  --type-scale-9: 0.4rem;
+
+  --page-gutters-default: 0 16px 0 16px;
+  --page-gutters-desktop: 0 48px 0 48px;
+  --page-gutters-one-side-desktop: 5vw;
+  --page-gutters-one-side-desktop-large: 24vw;
+  --page-gutters-mobile: 0 16px 0 16px;
+  --page-gutters-one-side-mobile: 16px;
+
+  --page-width: 1400px;
+
+  //Font sizes and line height
+  --font-size-mega-tiny: 0.5rem;
+  --font-size-tiny: 0.8rem;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.2rem;
+  --font-size-large: 1.5rem;
+
+  --font-size-h1: 4.25rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-h5: 1rem;
+  --font-size-h6: 32px;
+  --font-size-label: 16px;
+  --font-size-p: 16px;
+
+  --line-height-small: 1.5;
+  --line-height-regular: 1.5;
+
+  --font-weight-light: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 500;
+  --font-weight-heavy-bold: 700;
+
+  --type-scale-fixed-large: 20px;
+  --type-scale-fixed-medium: 16px;
+  --type-scale-fixed-small: 14px;
+  --type-scale-fixed-tiny: 12px;
+  --type-scale-fixed-label: 12px;
+  --type-scale-fixed-title: 24px;
+  --type-scale-fixed-large-label: 26px;
+
+  //Other
+  --z-index-small: 1;
+  --z-index-medium: 2;
+  --z-index-large: 3;
+  --z-index-mega-large: 4;
+
+  --page-gap-desktop: 7rem;
+  --page-gap-mobile: 3rem;
+
+  --border-radius-tiny: 0.2rem;
+  --border-radius-small: 0.5rem;
+  --border-radius-regular: 1rem;
+  --border-radius-medium: 1.2rem;
+
+  --input-padding-regular: 8px;
+  --input-height-regular: 48px;
+  --input-height-medium: 1rem;
+  --input-padding-medium: 0.5rem;
+
+  --textarea-height-regular: 108px;
+
+  --font-family-primary-regular: "SpaceGroteskRegular";
+  --font-family-secondary: "JetBrainsMono-Medium";
+
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: "SpaceGroteskRegular", sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @mixin typography-style(
+    $font-size,
+    $line-height,
+    $font-weight,
+    $font-family
+  ) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    font-family: $font-family;
+  }
+
+  // Apply the mixin to h1, h2, h3, and p
+  h1 {
+    @include typography-style(
+      var(--font-size-h1),
+      var(--line-height-regular),
+      var(--font-weight-heavy-bold),
+      "SpaceGroteskMedium"
+    );
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  h2 {
+    @include typography-style(
+      var(--font-size-h2),
+      var(--line-height-regular),
+      var(--font-weight-bold),
+      "SpaceGroteskMedium"
+    );
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  h2 {
+    @include typography-style(
+      var(--font-size-h2),
+      var(--line-height-regular),
+      var(--font-weight-bold),
+      "SpaceGroteskMedium"
+    );
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  h3 {
+    @include typography-style(
+      var(--font-size-h3),
+      var(--line-height-regular),
+      var(--font-weight-bold),
+      "SpaceGroteskMedium"
+    );
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  h3 {
+    @include typography-style(
+      var(--font-size-h3),
+      var(--line-height-regular),
+      var(--font-weight-bold),
+      "SpaceGroteskMedium"
+    );
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  h4 {
+    @include typography-style(
+      var(--font-size-h4),
+      var(--line-height-regular),
+      var(--font-weight-bold),
+      "SpaceGroteskMedium"
+    );
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  h5 {
+    @include typography-style(
+      var(--font-size-h5),
+      var(--line-height-regular),
+      var(--font-weight-bold),
+      "SpaceGroteskMedium"
+    );
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  h6 {
+    @include typography-style(
+      var(--font-size-h6),
+      var(--line-height-regular),
+      var(--font-weight-bold),
+      "SpaceGroteskMedium"
+    );
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    @include typography-style(
+      var(--font-size-p),
+      var(--line-height-small),
+      var(--font-weight-light),
+      "SpaceGroteskRegular"
+    );
+    margin: 0;
+    margin: 0;
+  }
+
+  label {
+    @include typography-style(
+      var(--font-size-label),
+      (--line-height-small),
+      var(--font-weight-bold),
+      "SpaceGroteskRegular"
+    );
+    margin: 0;
+  }
+  label {
+    @include typography-style(
+      var(--font-size-label),
+      (--line-height-small),
+      var(--font-weight-bold),
+      "SpaceGroteskRegular"
+    );
+    margin: 0;
+  }
+}

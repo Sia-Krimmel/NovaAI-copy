@@ -1,0 +1,110 @@
+.container {
+  overflow: hidden;
+  width: 100%;
+  z-index: var(--z-index-large);
+  position: relative;
+}
+
+.image {
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 1rem;
+  margin: 0 auto;
+  min-height: 500px;
+
+  @media (max-width: 768px) {
+    height: 300px;
+    max-height: 300px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+
+  .contentTitle {
+    color: var(--theme-color-accent);
+  }
+
+  .contentDescription {
+    color: var(--color-white-blue);
+    max-width: 60ch;
+    padding-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.content2Columns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contentWithImageRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.imageCaption {
+  color: var(--color-white-blue);
+  max-width: 40ch;
+  text-align: center;
+}
+
+.contentLabel {
+  color: var(--color-white-blue);
+  padding-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.ctaRow {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 400px;
+
+  @media (max-width: 768px) {
+    padding-top: 1rem;
+    margin: 0 auto;
+  }
+}
+
+.successStarIcon {
+  height: 2rem;
+  margin-left: -1rem;
+}
+
+.formSuccess {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.largeHeading {
+  text-align: left;
+  font-weight: var(--font-weight-bold);
+  font-family: 'SpaceGroteskLight', sans-serif;
+  font-size: 40px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    padding-top: 1rem;
+  }
+}

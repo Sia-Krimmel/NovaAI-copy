@@ -1,0 +1,121 @@
+.partnersWithContainer {
+  color: var(--color-white);
+  padding: 2rem;
+  border: 1px solid var(--color-border-grey100);
+  border-radius: var(--border-radius-tiny);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo {
+    max-height: 1.5rem;
+  }
+}
+
+.marqueeContainer {
+  z-index: var(--z-index-small);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  width: 200%;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee2 {
+  animation-delay: 10s;
+}
+
+.logo {
+  height: 1.5rem;
+  padding-right: 2rem;
+
+  @media (max-width: 768px) {
+    height: 1.4rem;
+    padding-right: 1rem;
+  }
+}
+
+.rectangle {
+  position: absolute;
+  z-index: var(--z-index-medium);
+  left: -24px;
+  width: 2vw;
+  height: 3rem;
+  background: var(--color-black);
+  mask-image: linear-gradient(to left, transparent, black 20%, black 100%, transparent);
+  box-shadow: -10px 0 10px rgba(204, 204, 204, 0.7);
+
+  @media (max-width: 1920px) {
+    width: 30vw;
+    height: 1.5rem;
+    display: none;
+  }
+
+  @media (max-width: 1700px) {
+    display: none;
+  }
+
+  @media (max-width: 1550px) {
+    width: 8vw;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.rectangleRight {
+  height: 1rem;
+  position: absolute;
+  z-index: var(--z-index-medium);
+  width: 5vw;
+  background: var(--color-black);
+  mask-image: linear-gradient(to right, transparent, black 20%, black 100%, transparent);
+  box-shadow: -10px 0 10px rgba(204, 204, 204, 0.7);
+  right: -20px;
+  height: 3rem;
+  top: -20px;
+
+  @media (max-width: 1920px) {
+    width: 30vw;
+    right: 0rem;
+    height: 1.5rem;
+    top: 0;
+    display: none;
+  }
+
+  @media (max-width: 1700px) {
+    display: none;
+  }
+
+  @media (max-width: 1550px) {
+    width: 10vw;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

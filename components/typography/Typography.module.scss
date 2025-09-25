@@ -1,0 +1,147 @@
+.h1 {
+  font-size: var(--type-scale-1);
+  line-height: 1;
+  font-weight: 400;
+}
+
+.h1sub {
+  margin-top: 1rem;
+  font-size: var(--type-scale-3);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.h2 {
+  font-size: var(--type-scale-2);
+  line-height: 1.2;
+  font-weight: 400;
+
+  @media (max-width: 768px) {
+    font-size: 48px;
+  }
+}
+
+.h2sub {
+  margin-top: 1rem;
+  font-size: var(--type-scale-3);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.h3 {
+  font-size: var(--type-scale-3);
+  font-weight: 400;
+}
+
+.h3sub {
+  margin-top: 1rem;
+  font-size: var(--type-scale-4);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.h6 {
+  font-size: var(--type-scale-5);
+  font-weight: 400;
+}
+
+.h6sub {
+  margin-top: 1rem;
+  font-size: var(--type-scale-7);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.p {
+  line-height: 1.5;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  color: var(--color-text);
+  font-family: 'Inter-Regular';
+  color: inherit;
+
+  &:visited {
+    color: var(--color-text);
+  }
+}
+
+.subtitle {
+  font-size: var(--type-scale-6);
+  line-height: var(--type-scale-6);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.formHeading {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  display: block;
+  padding-bottom: 0.5rem;
+  color: var(--theme-color-form-text);
+}
+
+.formCaption {
+  line-height: 1.5;
+  font-size: var(--type-scale-8);
+  font-weight: 400;
+  display: block;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.inputLabel {
+  font-size: var(--type-scale-7);
+  line-height: var(--type-scale-6);
+  text-weight: 600;
+  display: block;
+  letter-spacing: 0.2px;
+}
+
+.label {
+  font-family: var(--font-family-secondary);
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: var(--color-grey200);
+}
+
+.labelTiny {
+  text-transform: uppercase;
+  font-family: var(--font-family-secondary);
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  color: var(--theme-label-dark-text);
+}
+
+.largeHeading {
+  font-weight: var(--font-weight-bold);
+  font-family: 'SpaceGroteskLight', sans-serif;
+  font-size: 40px;
+  color: var(--color-white);
+}
+
+.subLead {
+  font-size: var(--type-scale-6);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.title {
+  font-size: var(--type-scale-fixed-large);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.text {
+  font-size: var(--type-scale-fixed-medium);
+  line-height: 1.6;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  color: var(--theme-text);
+
+  &:visited {
+    color: var(--theme-text);
+  }
+}

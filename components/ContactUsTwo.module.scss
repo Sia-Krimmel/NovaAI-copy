@@ -1,0 +1,199 @@
+.wrapper {
+  overflow: hidden;
+  z-index: var(--z-index-small);
+}
+
+.contactSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  gap: 1rem;
+  position: relative;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  font-size: 16px;
+
+  label {
+    margin-bottom: 8px;
+    color: #949494;
+    font-size: 16px;
+  }
+
+  @media (max-width: 765px) {
+    width: 100%;
+    font-size: var(--font-size-tiny);
+    max-width: 100%;
+  }
+}
+
+.contactTitle {
+  color: var(--color-white);
+  text-align: center;
+}
+
+.requiredText {
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #949494;
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size-mega-tiny);
+  }
+}
+
+.bottomForm {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.asterisk {
+  color: var(--theme-color-accent);
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  .image {
+    max-height: 400px;
+    position: absolute;
+    width: 70vw;
+
+    object-fit: cover;
+    border-radius: var(--border-radius-small);
+    left: 30vw;
+
+    @media (max-width: 1920px) {
+      width: 50vw;
+      left: 50vw;
+    }
+
+    @media (max-width: 1050px) {
+      width: 50vw;
+      left: 50vw;
+    }
+  }
+}
+
+.buttonWithArrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 32px rgba(154, 255, 99, 0.231);
+  font-family: SpaceGrotesk, sans-serif;
+  font-size: 16px;
+
+  .buttonText {
+    transform: translateX(10px);
+  }
+
+  .arrow {
+    opacity: 0;
+    height: 0.4rem;
+
+    @media (max-width: 768px) {
+      height: 0.8rem;
+    }
+  }
+
+  &:hover {
+    .buttonText {
+      animation: buttonTextFadeIn 1s forwards;
+    }
+    .arrow {
+      opacity: 1;
+      animation: arrowFadeIn 1s forwards;
+    }
+
+    transition: box-shadow 200ms ease;
+    box-shadow: 0px 0px 32px rgb(63, 197, 123);
+  }
+}
+
+.buttonLoading {
+  background: var(--color-black);
+  color: var(--color-lime-green);
+  border: 1px solid var(--color-lime-green);
+}
+
+@keyframes buttonTextFadeIn {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-4px);
+  }
+}
+
+@keyframes arrowFadeIn {
+  from {
+    transform: translateX(-2px);
+  }
+  to {
+    transform: translateX(2px);
+  }
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formSuccess {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: flex-start;
+  min-height: 400px;
+  padding: 0.5rem;
+  justify-content: center;
+  border-radius: var(--border-radius-regular);
+  font-family: 'SpaceGroteskLight', sans-serif;
+  font-weight: normal;
+  animation: 5s fadeIn forwards;
+  flex-direction: column;
+
+  .successStarIcon {
+    height: 3rem;
+    width: auto;
+    padding-bottom: 0.8rem;
+    display: block;
+    margin-left: 0;
+    display: block;
+    margin-right: auto;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.message {
+  color: var(--color-white);
+}

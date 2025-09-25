@@ -1,0 +1,22 @@
+.brandLogo {
+  display: flex;
+  align-items: center;
+
+  img {
+    max-height: 28px;
+    width: auto;
+  }
+}
+
+.brandName {
+  font-family: 'SpaceGroteskBold', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  @media (max-width: 328px) {
+    font-size: var(--font-size-tiny);
+  }
+}

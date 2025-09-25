@@ -1,0 +1,55 @@
+.animated {
+  text-decoration: none;
+  position: relative;
+  color: var(--color-black);
+
+  span {
+    display: inline-block;
+  }
+
+  span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    display: block;
+    margin-top: 0px;
+    right: 0;
+    transition: width 0.2s ease;
+    -webkit-transition: width 0.2s ease;
+  }
+}
+
+.animated.green {
+  &:hover span::after {
+    width: 100%;
+    left: 0;
+    background: var(--color-lime-green);
+  }
+}
+
+.animated.limeGreen {
+  &:hover span::after {
+    width: 100%;
+    left: 0;
+    background: var(--theme-color-accent);
+  }
+}
+
+.animated.black {
+  &:hover span::after {
+    width: 100%;
+    left: 0;
+    background: var(--color-black);
+  }
+}
+
+.green {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.grey {
+  color: #434343;
+  text-decoration: none;
+}

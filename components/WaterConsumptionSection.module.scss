@@ -1,0 +1,33 @@
+.formContainer {
+  height: 100vh;
+  margin-top: 80px;
+}
+
+.gridContainer {
+  display: grid;
+  row-gap: var(--type-scale-8);
+}
+
+.datePickerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.waterUsage {
+  margin-top: 8px;
+}
+
+.uploadBill {
+  margin-top: 24px;
+}
+
+.formUploads {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}

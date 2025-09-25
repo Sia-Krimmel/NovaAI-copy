@@ -1,0 +1,269 @@
+.container {
+  display: grid;
+  row-gap: 24px;
+}
+
+.title {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--type-scale-5);
+  display: flex;
+  align-items: center;
+  color: var(--color-black);
+}
+
+.subtitle {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--type-scale-5);
+  display: flex;
+  align-items: center;
+  color: var(--color-black);
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 0.5rem;
+  padding: 0.2rem 0rem;
+  gap: 0rem;
+  border-bottom: 1px solid var(--color-grey-transparent100);
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.col1 {
+  grid-column: span 2;
+}
+
+.col2 {
+  grid-column: span 2;
+}
+
+.col4 {
+  grid-column: span 4;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.headerTitle {
+  font-size: var(--type-scale-7);
+  font-size: 14px;
+  padding: 8px;
+}
+
+.scheduleContainer {
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    display: initial;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 0.25rem;
+  }
+}
+
+.tableHeader {
+  font-size: 12px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.eventDetails {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+  color: var(--color-grey);
+}
+
+.closeButton {
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(to right, #39c1cb, #006fec);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color cubic-bezier(0.23, 1, 0.32, 1) ease;
+  height: 2rem;
+}
+
+.people,
+.location,
+.time,
+.description {
+  color: var(--color-black);
+  font-weight: var(--font-weight-light);
+}
+
+.videoLinkButton {
+  cursor: pointer;
+  border: 1px solid var(--theme-color-accent);
+  color: var(--theme-color-accent);
+  padding: 0.2rem 0.5rem;
+  background: var(--color-white);
+  border-radius: 4px;
+  transition: 200ms ease background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  &:hover {
+    background: var(--theme-color-accent);
+    color: var(--color-white);
+
+    .videoLinkSVG path {
+      stroke: var(--color-white);
+    }
+  }
+
+  .videoLinkSVG path {
+    stroke: var(--theme-color-accent);
+  }
+}
+
+.reportTitles {
+  font-size: 14px;
+  border-bottom: 1px solid var(--color-grey-transparent100);
+}
+
+.tableBorder {
+  border: 1px solid var(--color-grey-transparent100);
+}
+
+.gridContainer2Cols {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.columnContainer {
+  padding: 8px;
+}
+
+.gridContainer5Cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid var(--color-grey-transparent100);
+}
+
+.tableColumn {
+  min-width: 80px;
+}
+
+//borders
+.borderRight {
+  border-right: 1px solid var(--color-grey-transparent100);
+}
+
+.borderLeft {
+  border-left: 1px solid var(--color-grey-transparent100);
+}
+
+.borderBottom {
+  border-bottom: 1px solid var(--color-grey-transparent100);
+}
+
+.borderTop {
+  border-top: 1px solid var(--color-grey-transparent100);
+}
+
+.step {
+  background: var(--color-grey-transparent100);
+  border-radius: 24px;
+  padding: 8px 16px 8px 16px;
+}
+
+.calulationTable {
+  display: grid;
+  gap: 16px;
+}
+
+.calculationHeader {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 0.5rem;
+
+  .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.calculationTableStyles {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--theme-color-border);
+}
+
+.calculatinToolip {
+  color: var(--color-black-gray);
+  padding-bottom: 16px;
+}
+
+.calculationTableHeading {
+  display: flex;
+  align-items: center;
+}
+
+.calculationResult {
+  display: flex;
+  align-items: center;
+  color: var(--theme-color-accent);
+}
+
+.grid2Columns {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.matrixResult {
+  background: var(--theme-color-accent);
+}
+
+.backgroundFillOut {
+  background: var(-color-accent-light);
+}
+
+.buttonRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.greenscoreResults {
+  display: grid;
+  gap: 1rem;
+}

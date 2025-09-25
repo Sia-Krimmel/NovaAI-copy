@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 4fr; /* Two columns: 1st column takes at least 250px and remaining space goes to the 2nd column */
+  background-color: var(--theme-modal);
+  height: 100%;
+}
+
+.sidenav {
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--theme-modal);
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: 1px solid var(--theme-color-border);
+  padding: 30px;
+}
+
+.sidenav a {
+  padding: 6px 16px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--theme-label-dark-text);
+  display: block;
+  margin-top: 20px;
+}
+
+.sidenav a:hover {
+  color: var(--theme-color-accent);
+}

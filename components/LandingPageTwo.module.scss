@@ -1,0 +1,43 @@
+.container {
+  position: relative;
+  z-index: var(--z-index-small);
+  overflow: hidden;
+}
+
+.gradientGreenHeader {
+  position: absolute;
+  top: 0;
+  left: 10vw;
+
+  @media (max-width: 1920px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.gradientGreenHeaderSmall {
+  position: absolute;
+  right: -2rem;
+  top: 8rem;
+  z-index: var(--z-index-large);
+  width: 30rem;
+  height: 40rem;
+
+  @media (max-width: 1920px) {
+    right: 0rem;
+    top: 8rem;
+  }
+}
+
+.gradientGreenBlog {
+  left: 0;
+  bottom: 350px;
+  position: absolute;
+}
+
+.gradientGreenWaitlist {
+  right: 0;
+  bottom: 1600px;
+  position: absolute;
+}

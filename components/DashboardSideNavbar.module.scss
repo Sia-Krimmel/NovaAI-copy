@@ -1,0 +1,158 @@
+.brandLogo {
+  display: flex;
+  align-items: center;
+  img {
+    max-height: 28px;
+    width: auto;
+  }
+}
+
+.brandName {
+  font-family: 'SpaceGroteskBold', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-modal);
+  margin-top: -4px;
+
+  @media (max-width: 328px) {
+    font-size: var(--font-size-tiny);
+  }
+}
+
+.title {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  display: block;
+  margin-top: 20px;
+
+  @media (max-width: 1080px) {
+    padding: 6px 8px 6px 0px;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  background-color: var(--theme-modal);
+  overflow-x: hidden;
+  padding-top: 8px;
+  border-right: 1px solid var(--theme-color-border);
+  padding-left: 30px;
+  padding-bottom: 30px;
+  min-height: 100vh;
+
+  @media (max-width: 1080px) {
+    padding-right: 8px;
+  }
+}
+.sidenav a {
+  padding: 6px 16px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--theme-label-dark-text);
+  display: block;
+
+  @media (max-width: 1080px) {
+    padding: 6px 8px 6px 0px;
+  }
+}
+
+.sidenav a:hover {
+  color: var(--theme-color-accent);
+}
+
+.footer {
+  color: var(--color-grey);
+  font-size: 16px;
+  padding: 6px 8px 6px 16px;
+  padding-top: 1.2rem;
+  bottom: 0;
+  position: absolute;
+  bottom: 1rem;
+
+  @media (max-width: 1080px) {
+    padding: 6px 8px 6px 0px;
+  }
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 4px 8px;
+  margin-left: -8px;
+}
+
+.activeLink {
+  border-radius: var(--border-radius-small);
+  color: var(--color-text);
+  background: var(--theme-primary-actions-light-background);
+  padding: 4px 8px;
+  margin-left: -8px;
+}
+
+.activeLinkBg {
+  color: var(--color-text);
+}
+
+// clean up
+
+.auditDetails {
+  padding: 6px 8px 6px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.auditNumber {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--theme-label-dark-text);
+}
+
+.auditStatus {
+  font-size: 16px;
+  color: var(--theme-label-dark-text);
+  padding-right: 8px;
+}
+
+.auditStatusColor {
+  color: var(--theme-border-green);
+  font-size: 16px;
+}
+
+.auditRequests {
+  border: 1px solid var(--theme-border-green);
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: fit-content;
+  background-color: var(--theme-border-green);
+  color: black;
+  font-size: 13px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auditOutputs {
+  color: var(--theme-border-green);
+  text-decoration: underline;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.auditProgress {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.firstLinkRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

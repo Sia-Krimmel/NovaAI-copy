@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+
+  @media (max-width: 768px) {
+    min-height: 8rem;
+    width: cover;
+  }
+}
+
+.heading {
+  color: var(--color-white);
+  line-height: var(--line-height-h6);
+  font-size: 27px;
+}
+
+.p {
+  color: var(--color-grey);
+}
+
+.imageSmall {
+  max-height: 2rem;
+  width: auto;
+  border: 1px solid green;
+  padding: 0.2rem;
+
+  @media (max-width: 768px) {
+    padding: 0rem;
+  }
+}
+
+.imageMedium {
+  width: 100%;
+}
+
+.imageLarge {
+  max-height: 15rem;
+  width: auto;
+}
+
+.imageWithBorder {
+  border-radius: var(--border-radius-small);
+  border: 1px solid var(--color-grey);
+}
+
+.imageNoBorder {
+  border-radius: none;
+  border: none;
+}
+
+.footnote {
+  font-size: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.textContainer {
+  display: grid;
+  row-gap: 0.5rem;
+}

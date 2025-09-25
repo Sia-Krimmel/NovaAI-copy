@@ -1,0 +1,8 @@
+export default function CopyOutlineSVG(props) {
+  return (
+    <svg {...props} width={props.width ?? '16'} height={props.height ?? '16'} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fillRule="evenodd" clipRule="evenodd" d="M15 4L11 0H4.5V12.5H15V4ZM10.3787 1.5L13.5 4.62132V11H6V1.5H10.3787Z" fill={props.color || 'gray'} />
+      <path d="M1 4V16H11V14.5H2.5V4H1Z" fill={props.color || 'gray'} />
+    </svg>
+  );
+}

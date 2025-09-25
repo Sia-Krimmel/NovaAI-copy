@@ -1,0 +1,42 @@
+.columnContainer {
+  padding: 8px;
+}
+
+.borderRight {
+  border-right: 1px solid var(--color-grey-transparent100);
+}
+
+.borderLeft {
+  border-left: 1px solid var(--color-grey-transparent100);
+}
+
+.tableHeader {
+  font-size: 12px;
+  padding: 8px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.headerTitle {
+  font-size: var(--type-scale-7);
+  font-size: 14px;
+  padding: 8px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gridContainer2Cols {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.reportTitles {
+  font-size: 14px;
+  border-bottom: 1px solid var(--color-grey-transparent100);
+}

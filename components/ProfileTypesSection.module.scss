@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-black);
+  flex-direction: column;
+  gap: 16px;
+  color: var(--color-white);
+  height: 100vh;
+}
+
+.profileContainer {
+  border: 1px solid var(--color-white);
+  padding: 28px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: border-color 300ms ease-in;
+
+  &:hover {
+    border-color: var(--color-lime-green);
+  }
+}
+
+.profileHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding-bottom: 16px;
+  align-items: center;
+}
+
+.profileDescription {
+  color: var(--color-grey);
+  max-width: 30ch;
+  padding-bottom: 8px;
+}
+
+.account {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+}

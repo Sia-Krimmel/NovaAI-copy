@@ -1,0 +1,90 @@
+.buttonOne {
+  background-color: var(--theme-color-accent);
+  border-radius: 4px;
+  width: 150px;
+  height: 42px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  flex-direction: row;
+  padding-bottom: 4px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  font-size: 12px;
+  flex-direction: row;
+}
+
+.pagination {
+  display: flex;
+  gap: 4px;
+}
+
+.previous {
+  color: #757575;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--theme-color-accent);
+    transition: color 200ms ease;
+  }
+}
+
+.next {
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--theme-color-accent);
+    transition: color 200ms ease;
+  }
+}
+
+.total {
+  gap: 30px;
+  color: #757575;
+}
+
+.actions {
+  display: flex;
+  gap: 30px;
+  text-decoration: underline;
+}
+
+//  Audit Outputs
+.auditColumns {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.eachAudit {
+  width: 100%;
+  border-bottom: 0.74px solid var(--theme-color-border);
+  padding: 15px;
+  padding: 0px 0px 15px;
+}
+
+.holding {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.rec {
+  text-decoration: underline;
+}

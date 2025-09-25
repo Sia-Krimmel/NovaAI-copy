@@ -1,0 +1,235 @@
+import * as Constants from 'common/constants';
+import * as Utilities from 'common/utilities';
+
+const REQUEST_HEADERS = {
+  Accept: 'application/json',
+  'Content-Type': 'application/json',
+};
+
+const getHeaders = (key) => {
+  return { ...REQUEST_HEADERS, Authorization: `Bearer ${key}` };
+};
+
+export async function userAuthenticate({ email, password }) {
+  let result;
+
+  try {
+    const response = await fetch('https://api-nova.onrender.com/api/users/authenticate', {
+      method: 'POST',
+      headers: REQUEST_HEADERS,
+      body: JSON.stringify({ email, password }),
+    });
+    result = await response.json();
+  } catch (e) {
+    console.log(e, 'error in userAuthenticate()');
+
+    return null;
+  }
+
+  if (!result) {
+    return null;
+  }
+
+  if (!result.user) {
+    return null;
+  }
+
+  return result;
+}
+
+export async function userRefreshKey({ email, password }) {
+  let result;
+  try {
+    const response = await fetch('https://api-nova.onrender.com/api/users/regenerate-key', {
+      method: 'POST',
+      headers: REQUEST_HEADERS,
+      body: JSON.stringify({ email, password }),
+    });
+    result = await response.json();
+  } catch (e) {
+    return null;
+  }
+
+  if (!result) {
+    return null;
+  }
+
+  if (!result.user) {
+    return null;
+  }
+
+  return result;
+}
+
+export async function userUnsubscribeServices({ key }) {
+  if (Utilities.isEmpty(key)) {
+    return null;
+  }
+
+  let result;
+  try {
+    const response = await fetch('https://api-nova.onrender.com/api/users/subscriptions/unsubscribe', {
+      method: 'POST',
+      headers: { 'X-API-KEY': key, Accept: 'application/json', 'Content-Type': 'application/json' },
+    });
+    result = await response.json();
+  } catch (e) {
+    return null;
+  }
+
+  if (!result) {
+    return null;
+  }
+
+  if (!result.user) {
+    return null;
+  }
+
+  return result;
+}
+
+export async function userUploadData({ file, key }) {
+  if (Utilities.isEmpty(key)) {
+    return null;
+  }
+
+  let signedResult;
+  const name = file.name;
+  const type = file.type;
+  const size = file.size;
+
+  if (size > Constants.MAX_SIZE_BYTES) {
+    return { error: 'File size exceeds 15mb limit' };
+  }
+
+  try {
+    const signedResponse = await fetch(`https://api-nova.onrender.com/api/data/generate-presigned-url`, {
+      method: 'POST',
+      headers: {
+        'X-API-KEY': key,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ type, file: name, size }),
+    });
+    signedResult = await signedResponse.json();
+  } catch (e) {
+    return null;
+  }
+
+  if (!signedResult) {
+    return null;
+  }
+
+  if (signedResult.error) {
+    return signedResult;
+  }
+
+  if (!signedResult.uploadURL) {
+    return null;
+  }
+
+  try {
+    fetch(signedResult.uploadURL, {
+      method: 'PUT',
+      body: file,
+    });
+  } catch (e) {
+    return null;
+  }
+
+  return signedResult;
+}
+
+export async function userCreatePost({ id, key, src, type }) {
+  if (Utilities.isEmpty(key)) {
+    return null;
+  }
+
+  let result;
+  try {
+    const response = await fetch('https://api-nova.onrender.com/api/posts/create', {
+      method: 'POST',
+      headers: { 'X-API-KEY': key, Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type, fields: { fileId: id, public: true }, src }),
+    });
+    result = await response.json();
+  } catch (e) {
+    return null;
+  }
+
+  if (!result) {
+    return null;
+  }
+
+  return result;
+}
+
+export async function userDeletePost({ id, key }) {
+  if (Utilities.isEmpty(key)) {
+    return null;
+  }
+
+  let result;
+  try {
+    const response = await fetch('https://api-nova.onrender.com/api/posts/delete', {
+      method: 'POST',
+      headers: { 'X-API-KEY': key, Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id }),
+    });
+    result = await response.json();
+  } catch (e) {
+    return null;
+  }
+
+  if (!result) {
+    return null;
+  }
+
+  return result;
+}
+
+export async function userListThreadReplies({ id, orderBy }) {
+  let result;
+  try {
+    const response = await fetch('https://api-nova.onrender.com/api/posts/all-thread-replies', {
+      method: 'POST',
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, orderBy }),
+    });
+    result = await response.json();
+  } catch (e) {
+    return null;
+  }
+
+  if (!result) {
+    return null;
+  }
+
+  return result;
+}
+
+export async function userCreatePlainThread({ key, formType, documentId, fields, src, type }) {
+  if (Utilities.isEmpty(key)) {
+    return null;
+  }
+
+  let result;
+
+  try {
+    const response = await fetch('https://api-nova.onrender.com/api/posts/create', {
+      method: 'POST',
+      headers: { 'X-API-KEY': key, Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fields, src, type, documentId, formType }),
+    });
+    result = await response.json();
+  } catch (e) {
+    console.log(e, 'error showing messages');
+    return null;
+  }
+
+  if (!result) {
+    return null;
+  }
+
+  return result;
+}

@@ -1,0 +1,41 @@
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.spacingDesktopRegularMobileTiny {
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    gap: 0.5rem;
+  }
+}
+
+.spacingDesktopRegularMobileSmall {
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+}
+
+.spacingDesktopRegularMobileRegular {
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    gap: 3rem;
+  }
+}
+
+.title {
+  color: var(--color-white);
+}
+
+.description {
+  color: var(--color-grey);
+}

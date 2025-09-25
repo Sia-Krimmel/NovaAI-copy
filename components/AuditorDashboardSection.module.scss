@@ -1,0 +1,87 @@
+.container {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 4fr; /* Two columns: 1st column takes at least 250px and remaining space goes to the 2nd column */
+  background-color: var(--color-black);
+  height: 100vh;
+}
+
+.reportingSection {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text);
+}
+
+.buttonOne {
+  background-color: var(--theme-color-accent);
+  border-radius: 4px;
+  width: 150px;
+  min-height: 48px;
+  font-size: 14px;
+  white-space: nowrap;
+  text-decoration: none;
+  border: 0px transparent;
+  cursor: pointer;
+}
+
+.gridLayoutTables {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.evpTable {
+  border-radius: var(--border-radius-small);
+  display: flex;
+  position: relative;
+  padding: 16px;
+  color: var(--color-text);
+  background-color: var(--theme-color-banner);
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  flex-direction: column;
+  border: 1px solid var(--theme-color-border);
+  grid-column: span 2;
+}
+
+.auditTable {
+  border-radius: var(--border-radius-small);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 342px;
+  padding: 20px;
+  background-color: var(--theme-color-banner);
+  font-size: 16px;
+  color: var(--color-text);
+  border: 1px solid var(--theme-color-border);
+}
+
+.greenscoreTable {
+  grid-column: span 2;
+  font-size: 16px;
+}
+
+.greenscoresSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add a 20px gap between the .greenscoresBox elements */
+}
+
+.buttonWrapper {
+  gap: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.notice {
+  font-size: 14px;
+  color: var(--color-grey);
+}

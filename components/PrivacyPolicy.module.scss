@@ -1,0 +1,66 @@
+
+.homeCta {
+    color: var(--color-black-gray);
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'SpaceGroteskRegular';
+    font-weight: 900;
+
+   &:hover{
+    transition: color 200ms var(--color-black);
+   }
+}
+
+
+.p {
+    font-size: 20px;;
+    font-family: 'SpaceGroteskRegular';
+    line-height: var(--line-height-regular);
+    font-weight: 300;
+    padding-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      text-align: justify;
+    }
+  }
+  
+
+.headingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    flex-direction: column;
+  }
+
+  .heading {
+    font-family: 'SpaceGroteskMedium';
+    font-size: 1rem;
+    // text-transform: uppercase;
+    height: 15vh;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+}
+}
+
+.contactLink {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,32 @@
+// .body {
+//   background:var(--color-black);
+//   font-size: 48px;
+//   margin: 0 auto;
+// }
+
+.body {
+  font-size: 2rem;
+  padding: 24px;
+}
+
+.pixel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.blockGap{
+  display:grid;
+  row-gap: 4rem;
+
+  @media (max-width:1200px) {
+    row-gap: 2rem;
+  }
+
+  @media (max-width:768px) {
+    row-gap: 3rem;
+  }
+}
+

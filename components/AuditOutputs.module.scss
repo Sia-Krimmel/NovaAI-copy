@@ -1,0 +1,61 @@
+.form {
+  padding: 2rem 0px;
+}
+
+.formHeading {
+  padding-bottom: 0.5rem;
+}
+
+.borderRight {
+  border-right: 1px solid var(--color-grey-transparent100);
+}
+
+.borderLeft {
+  border-left: 1px solid var(--color-grey-transparent100);
+}
+
+.borderBottom {
+  border-bottom: 1px solid var(--color-grey-transparent100);
+}
+
+.borderTop {
+  border-top: 1px solid var(--color-grey-transparent100);
+}
+
+.reportTitles {
+  font-size: 14px;
+  border-bottom: 1px solid var(--color-grey-transparent100);
+}
+
+.columnContainer {
+  padding: 8px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tableHeader {
+  font-size: 12px;
+  padding: 8px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.auditOutputResult {
+  border: 1px solid var(--theme-color-border);
+  border-radius: var(--border-radius-small);
+}
+
+.gridContainer2Cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.auditResultRow {
+  padding: 0.5rem;
+}

@@ -1,0 +1,98 @@
+.hardwareSectionContainer {
+  display: grid;
+  row-gap: var(--type-scale-8);
+  margin-top: 1rem;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hardwareInfoText {
+  width: 100%;
+  font-size: 13px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
+.hardwareTableContainer {
+  border: 1px solid var(--theme-color-border);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: var(--border-radius-tiny);
+}
+
+.addButton {
+  min-width: 48px;
+}
+
+.tableStyle {
+  border-collapse: collapse;
+  width: 100%;
+
+  .tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--theme-color-border);
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+  }
+
+  .th {
+    text-align: left;
+  }
+
+  .tbody {
+    font-size: 13px;
+  }
+
+  .purchaseCTA {
+    text-decoration: underline;
+    color: var(--theme-color-accent);
+  }
+
+  .name {
+    text-align: left;
+  }
+  x .cta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.title {
+  padding-bottom: 8px;
+}
+
+.hardwareDetailsContainer {
+  border-radius: 8px;
+  margin-top: 30px;
+
+  .uploadAnotherDocument {
+    display: flex;
+    text-decoration: underline;
+    font-size: 13px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+  }
+}
+
+.navigationButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.formUploads {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}

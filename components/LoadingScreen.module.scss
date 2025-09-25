@@ -1,0 +1,12 @@
+.container {
+  min-width: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.message {
+  color: var(--color-grey);
+}
